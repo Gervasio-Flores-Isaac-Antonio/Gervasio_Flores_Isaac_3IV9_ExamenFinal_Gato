@@ -10,6 +10,11 @@ public class Usuario {
     private String puntaje;
 
     //constructor
+    public Usuario(String puntaje) {
+        this.puntaje = puntaje;
+    }
+    
+    //constructor
     public Usuario(String nombre, String edad, String puntaje) {
         this.nombre = nombre;
         this.edad = edad;

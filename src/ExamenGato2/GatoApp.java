@@ -129,6 +129,7 @@ public class GatoApp extends javax.swing.JFrame {
         jLabel9.setText("Edad:");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Juego de Gato Clasico Isaac Gervasio 3IV9");
 
         Boton1.setFont(new java.awt.Font("Tahoma", 1, 56)); // NOI18N
         Boton1.addActionListener(new java.awt.event.ActionListener() {
@@ -194,7 +195,7 @@ public class GatoApp extends javax.swing.JFrame {
         });
 
         resetear.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        resetear.setText("Intente otra vez");
+        resetear.setText("Reiniciar");
         resetear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resetearActionPerformed(evt);
@@ -298,29 +299,32 @@ public class GatoApp extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(resetear, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(Boton4, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Boton1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(18, 18, 18)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(resetear, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(Boton2, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(Boton4, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(Boton1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGap(18, 18, 18)
-                                    .addComponent(Boton3, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(Boton5, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Boton6, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(Boton2, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(Boton3, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(Boton5, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(Boton6, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGap(6, 6, 6)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(Boton7, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)
-                        .addComponent(Boton8, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
+                        .addComponent(Boton8, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
                         .addComponent(Boton9, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 27, Short.MAX_VALUE)
+                .addGap(0, 38, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -450,14 +454,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador1gano[1]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
             
         }else{
             turn++;
@@ -466,14 +463,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador2gano[1]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }
             
        }else{
@@ -491,14 +481,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador1gano[2]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }else{
             turn++;
             Boton3.setText("O");
@@ -506,14 +489,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador2gano[2]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }
        }else{
            JOptionPane.showMessageDialog(rootPane, "este boton ya esta usado");
@@ -531,14 +507,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador1gano[3]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }else{
             turn++;
             Boton4.setText("O");
@@ -546,14 +515,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador2gano[3]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }
        }else{
            JOptionPane.showMessageDialog(rootPane, "este boton ya esta usado");
@@ -570,14 +532,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador1gano[4]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }else{
             turn++;
             Boton5.setText("O");
@@ -585,14 +540,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador2gano[4]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }
        }else{
            JOptionPane.showMessageDialog(rootPane, "este boton ya esta usado");
@@ -608,14 +556,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador1gano[5]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }else{
             turn++;
             Boton6.setText("O");
@@ -623,14 +564,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador2gano[5]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }
        }else{
            JOptionPane.showMessageDialog(rootPane, "este boton ya esta usado");
@@ -647,14 +581,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador1gano[6]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }else{
             turn++;
             Boton7.setText("O");
@@ -662,14 +589,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador2gano[6]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }
        }else{
            JOptionPane.showMessageDialog(rootPane, "este boton ya esta usado");
@@ -686,14 +606,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador1gano[7]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }else{
             turn++;
             Boton8.setText("O");
@@ -701,14 +614,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador2gano[7]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }
        }else{
            JOptionPane.showMessageDialog(rootPane, "este boton ya esta usado");
@@ -725,14 +631,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador1gano[8]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+   
         }else{
             turn++;
             Boton9.setText("O");
@@ -740,14 +639,7 @@ public class GatoApp extends javax.swing.JFrame {
             jugador2gano[8]=1;
             
             revisa();
-//            int resultado1=jugador1gano();
-//            int resultado2=jugador2gano();
-//            
-//            if(resultado1==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****tu has ganado. felicitaciones*****");
-//            }else if(resultado2==1){
-//                JOptionPane.showMessageDialog(rootPane, "*****JAJAJAJAJAJAJAJA.....mala suerte. ha ganado la maquina*****");
-//            }
+
         }
        }else{
            JOptionPane.showMessageDialog(rootPane, "este boton ya esta usado");
@@ -780,47 +672,13 @@ public class GatoApp extends javax.swing.JFrame {
     }//GEN-LAST:event_resetearActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        System.out.println("boton guardar");
-       
-        String archivo="C:\\isaac2\\isaac.txt";
-        
-        FileWriter escribir;
-       
-       
-    try {
-
-        escribir = new FileWriter(archivo, true);
-        escribir.write(usuario.getNombre());
-        escribir.write("\n");
-        escribir.write(usuario.getEdad());
-        escribir.write("\n");
-        escribir.write(usuario.getPuntaje());
-        escribir.write("\n");
-        escribir.write("\n");
-        escribir.write(usuario2.getNombre());
-        escribir.write("\n");
-        escribir.write(usuario2.getEdad());
-        escribir.write("\n");
-        escribir.write(usuario2.getPuntaje());
-        escribir.write("\n");
-        escribir.write("\n");
-        escribir.close();
-
-    } catch (FileNotFoundException ex) {
-        JOptionPane.showMessageDialog(null, "Error al guardar, ponga nombre al archivo");
-    } catch (IOException ex) {
-        JOptionPane.showMessageDialog(null, "Error al guardar, en la salida");
-    }  
+          guardar();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        
-        try {        
-            leeArchivo("C:\\isaac2\\isaac.txt");
-        } catch (IOException ex) {
-            Logger.getLogger(GatoApp.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
+        PartidasGuardadas pg = new PartidasGuardadas();
+          pg.setVisible(true);
                
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -837,13 +695,10 @@ public class GatoApp extends javax.swing.JFrame {
         jLabel7.setText(edad);
         
         usuario = new Usuario(nombre,edad, puntaje1);
-       
-        
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-
         
         String nombre = jTextField1.getText();
         String edad = jTextField2.getText();
@@ -851,22 +706,46 @@ public class GatoApp extends javax.swing.JFrame {
         jLabel13.setText(nombre);
         jLabel14.setText(edad);
         
-     
         usuario2 = new Usuario(nombre,edad, puntaje2);
         
     }//GEN-LAST:event_jButton4ActionPerformed
     
-     public void leeArchivo(String archivo) throws FileNotFoundException, IOException {
-        System.out.println("muestraContenido");
-        String cadena;
-      FileReader f = new FileReader(archivo);
-      BufferedReader b = new BufferedReader(f);
-      while((cadena = b.readLine())!=null) {
-          System.out.println(cadena);
-      }
-      b.close();
-}
-     
+   
+    public void guardar(){
+        System.out.println("boton guardar");
+       
+        String archivo="C:\\isaac2\\isaac.txt";
+        
+        FileWriter escribir;
+       
+        usuario.setPuntaje(puntaje1);
+        usuario2.setPuntaje(puntaje2);
+       
+    try {
+
+        escribir = new FileWriter(archivo, false);
+        escribir.write(usuario.getNombre());
+        escribir.write("\n");
+        escribir.write(usuario.getEdad());
+        escribir.write("\n");
+        escribir.write(usuario.getPuntaje());
+        escribir.write("\n");
+        escribir.write("\n");
+        escribir.write(usuario2.getNombre());
+        escribir.write("\n");
+        escribir.write(usuario2.getEdad());
+        escribir.write("\n");
+        escribir.write(usuario2.getPuntaje());
+        escribir.close();
+
+    } catch (FileNotFoundException ex) {
+        JOptionPane.showMessageDialog(null, "Error al guardar, ponga nombre al archivo");
+    } catch (IOException ex) {
+        JOptionPane.showMessageDialog(null, "Error al guardar, en la salida");
+    }
+    }
+    
+          
      public void revisa(){
      
      int resultado1=jugador1gano();
