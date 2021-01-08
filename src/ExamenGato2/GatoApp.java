@@ -23,7 +23,11 @@ public class GatoApp extends javax.swing.JFrame {
     
     //ENLACE GITHUB
     //https://github.com/Gervasio-Flores-Isaac-Antonio/Gervasio_Flores_Isaac_3IV9_ExamenFinal_Gato.git
-    //ENLACE GITHUB
+
+    
+    
+    //ENLACE VIDEO DE YOUTUBE
+    //https://youtu.be/rTraBiRKkb0
     
     
     
