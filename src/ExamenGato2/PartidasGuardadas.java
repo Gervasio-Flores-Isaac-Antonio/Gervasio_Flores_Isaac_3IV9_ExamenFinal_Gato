@@ -24,8 +24,9 @@ public class PartidasGuardadas extends javax.swing.JFrame {
     public PartidasGuardadas() {
         initComponents();
         
-        try {        
-            leeArchivo("C:\\isaac2\\isaac.txt");
+        try {   
+            
+            leeArchivo();
         } catch (IOException ex) {
             Logger.getLogger(GatoApp.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -35,8 +36,9 @@ public class PartidasGuardadas extends javax.swing.JFrame {
     
     
     
-    public  void leeArchivo(String archivo) throws FileNotFoundException, IOException {
+    public  void leeArchivo() throws FileNotFoundException, IOException {
         //JOptionPane.showMessageDialog(null, "Partida Guardada",cadena,JOptionPane.INFORMATION_MESSAGE);
+        String archivo="src/ExamenGato2/isaac.txt";
         System.out.println("muestraContenido");
         String cadena;
         int cont = 0;

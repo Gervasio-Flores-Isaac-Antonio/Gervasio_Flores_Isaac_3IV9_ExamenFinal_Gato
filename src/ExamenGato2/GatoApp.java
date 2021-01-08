@@ -1,13 +1,9 @@
 
 package ExamenGato2;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class GatoApp extends javax.swing.JFrame {
@@ -24,6 +20,10 @@ public class GatoApp extends javax.swing.JFrame {
     private Usuario usuario2;
     
     
+    
+    //ENLACE GITHUB
+    //https://github.com/Gervasio-Flores-Isaac-Antonio/Gervasio_Flores_Isaac_3IV9_ExamenFinal_Gato.git
+    //ENLACE GITHUB
     
     
     
@@ -95,6 +95,8 @@ public class GatoApp extends javax.swing.JFrame {
 
         jLabel9 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
         Boton1 = new javax.swing.JButton();
         Boton3 = new javax.swing.JButton();
         Boton2 = new javax.swing.JButton();
@@ -121,6 +123,7 @@ public class GatoApp extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -139,16 +142,20 @@ public class GatoApp extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
 
         jLabel9.setText("Edad:");
 
         jLabel21.setText("jLabel21");
 
+        jButton6.setText("jButton6");
+
+        jButton7.setText("jButton7");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Juego de Gato Clasico Isaac Gervasio 3IV9");
-        setMinimumSize(new java.awt.Dimension(850, 741));
-        setPreferredSize(new java.awt.Dimension(710, 741));
-        setSize(new java.awt.Dimension(300, 200));
+        setMinimumSize(new java.awt.Dimension(900, 745));
+        setSize(new java.awt.Dimension(900, 745));
         getContentPane().setLayout(null);
 
         Boton1.setFont(new java.awt.Font("Tahoma", 1, 56)); // NOI18N
@@ -176,7 +183,7 @@ public class GatoApp extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Boton2);
-        Boton2.setBounds(230, 30, 166, 130);
+        Boton2.setBounds(226, 30, 170, 130);
 
         Boton4.setFont(new java.awt.Font("Tahoma", 1, 56)); // NOI18N
         Boton4.addActionListener(new java.awt.event.ActionListener() {
@@ -194,7 +201,7 @@ public class GatoApp extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Boton5);
-        Boton5.setBounds(230, 200, 166, 130);
+        Boton5.setBounds(226, 200, 170, 130);
 
         Boton7.setFont(new java.awt.Font("Tahoma", 1, 56)); // NOI18N
         Boton7.addActionListener(new java.awt.event.ActionListener() {
@@ -221,7 +228,7 @@ public class GatoApp extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Boton8);
-        Boton8.setBounds(220, 370, 166, 130);
+        Boton8.setBounds(226, 370, 170, 130);
 
         Boton9.setFont(new java.awt.Font("Tahoma", 1, 56)); // NOI18N
         Boton9.addActionListener(new java.awt.event.ActionListener() {
@@ -240,7 +247,7 @@ public class GatoApp extends javax.swing.JFrame {
             }
         });
         getContentPane().add(resetear);
-        resetear.setBounds(240, 670, 136, 47);
+        resetear.setBounds(230, 680, 136, 47);
 
         jButton1.setText("Guardar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -249,7 +256,7 @@ public class GatoApp extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(650, 400, 79, 25);
+        jButton1.setBounds(610, 400, 79, 25);
 
         jButton2.setText("Abrir");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -258,7 +265,7 @@ public class GatoApp extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(750, 400, 79, 25);
+        jButton2.setBounds(700, 400, 90, 25);
         getContentPane().add(jLabel6);
         jLabel6.setBounds(622, 375, 0, 0);
         getContentPane().add(jLabel7);
@@ -294,20 +301,20 @@ public class GatoApp extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField1)
+                    .addComponent(jTextField2))
+                .addGap(12, 12, 12))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel10))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-                            .addComponent(jTextField2)))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton4)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(15, Short.MAX_VALUE))
+                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -328,7 +335,7 @@ public class GatoApp extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(650, 30, 190, 140);
+        jPanel1.setBounds(650, 30, 220, 140);
         getContentPane().add(jLabel13);
         jLabel13.setBounds(610, 501, 0, 0);
         getContentPane().add(jLabel14);
@@ -349,6 +356,15 @@ public class GatoApp extends javax.swing.JFrame {
         getContentPane().add(jLabel18);
         jLabel18.setBounds(400, 40, 20, 450);
 
+        jButton8.setText("Borrar");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton8);
+        jButton8.setBounds(800, 400, 80, 25);
+
         jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\Principal\\Pictures\\b.png")); // NOI18N
         jLabel19.setText("jLabel18");
         getContentPane().add(jLabel19);
@@ -357,7 +373,7 @@ public class GatoApp extends javax.swing.JFrame {
         jLabel20.setIcon(new javax.swing.ImageIcon("C:\\Users\\Principal\\Pictures\\cat.png")); // NOI18N
         jLabel20.setText("jLabel20");
         getContentPane().add(jLabel20);
-        jLabel20.setBounds(40, 530, 550, 180);
+        jLabel20.setBounds(20, 530, 550, 200);
 
         jPanel2.setOpaque(false);
 
@@ -396,52 +412,49 @@ public class GatoApp extends javax.swing.JFrame {
                             .addComponent(jLabel4)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 37, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel12)
-                                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(13, 13, 13))
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel2))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel11)
+                        .addGap(12, 12, 12))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel15))
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(jLabel2)
-                                        .addGap(67, 67, 67)
-                                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(jLabel12)
+                                .addGap(29, 29, 29))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel15)
+                                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3))
+                                .addGap(15, 15, 15))))
                     .addComponent(jSeparator1))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel11))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(1, 1, 1)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
                     .addComponent(jLabel24))
-                .addGap(32, 32, 32)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel12))
@@ -449,29 +462,38 @@ public class GatoApp extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel23)
                     .addComponent(jLabel25))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(660, 170, 170, 220);
+        jPanel2.setBounds(660, 170, 200, 220);
 
         jLabel26.setIcon(new javax.swing.ImageIcon("C:\\Users\\Principal\\Pictures\\cecyt-9-logo-1F6A5DDBFF-seeklogo.com (1).png")); // NOI18N
         jLabel26.setText("jLabel26");
         getContentPane().add(jLabel26);
-        jLabel26.setBounds(590, 420, 280, 330);
+        jLabel26.setBounds(590, 420, 290, 320);
 
         jLabel27.setIcon(new javax.swing.ImageIcon("C:\\Users\\Principal\\Pictures\\grad.png")); // NOI18N
         jLabel27.setText("jLabel27");
         getContentPane().add(jLabel27);
-        jLabel27.setBounds(0, 0, 880, 740);
+        jLabel27.setBounds(0, 0, 900, 750);
+
+        jButton5.setText("Guardar");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5);
+        jButton5.setBounds(650, 400, 79, 25);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -769,12 +791,51 @@ public class GatoApp extends javax.swing.JFrame {
         usuario2 = new Usuario(nombre,edad, puntaje2);
         
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    //boton borrar
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        
+        System.out.println("boton borrar");
+       
+        String archivo="src/ExamenGato2/isaac.txt";
+        
+        FileWriter escribir;
+       
+    try {
+
+        escribir = new FileWriter(archivo, false);
+        escribir.write("");
+        escribir.write("\n");
+        escribir.write("");
+        escribir.write("\n");
+        escribir.write("");
+        escribir.write("\n");
+        escribir.write("\n");
+        escribir.write("");
+        escribir.write("\n");
+        escribir.write("");
+        escribir.write("\n");
+        escribir.write("");
+        escribir.close();
+
+    } catch (FileNotFoundException ex) {
+        JOptionPane.showMessageDialog(null, "Error al guardar, ponga nombre al archivo");
+    } catch (IOException ex) {
+        JOptionPane.showMessageDialog(null, "Error al guardar, en la salida");
+    }
+    
+    }//GEN-LAST:event_jButton8ActionPerformed
     
    
     public void guardar(){
         System.out.println("boton guardar");
        
-        String archivo="C:\\isaac2\\isaac.txt";
+//        String archivo="C:\\isaac2\\isaac.txt";
+        String archivo="src/ExamenGato2/isaac.txt";
         
         FileWriter escribir;
        
@@ -819,19 +880,40 @@ public class GatoApp extends javax.swing.JFrame {
 
             puntaje1 = Integer.toString(puntosJugador1);
             
-            
             jLabel2.setText(Integer.toString(puntosJugador1));
             
+            if(puntaje1.equals("5")){
+                Boton1.setVisible(false);
+                Boton2.setVisible(false);
+                Boton3.setVisible(false);
+                Boton4.setVisible(false);
+                Boton5.setVisible(false);
+                Boton6.setVisible(false);
+                Boton7.setVisible(false);
+                Boton8.setVisible(false);
+                Boton9.setVisible(false);
+                JOptionPane.showMessageDialog(rootPane, "*****Jugador 1 GANO!!. Fin de Juego*****");
+            }
             
             
             }else if(resultado2==1){
                 JOptionPane.showMessageDialog(rootPane, "*****Jugador 2 GANO!!. felicitaciones*****");
             puntosJugador2++;
-            
             puntaje2 = Integer.toString(puntosJugador2);
-            
-            
             jLabel3.setText(Integer.toString(puntosJugador2));
+            
+            if(puntaje2.equals("5")){
+                Boton1.setVisible(false);
+                Boton2.setVisible(false);
+                Boton3.setVisible(false);
+                Boton4.setVisible(false);
+                Boton5.setVisible(false);
+                Boton6.setVisible(false);
+                Boton7.setVisible(false);
+                Boton8.setVisible(false);
+                Boton9.setVisible(false);
+                JOptionPane.showMessageDialog(rootPane, "*****Jugador 2 GANO!!. Fin de Juego*****");
+            }
             
             }
      
@@ -902,6 +984,10 @@ public class GatoApp extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
